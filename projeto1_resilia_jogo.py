@@ -9,22 +9,19 @@ Você pode escolher entre: Veterinário, Biólogo e Protetor da Florestas.''')
 #escolha de personagens
 
 def escolha_seu_personagem():
-	is_valid = True
-	while(is_valid):
+	while(True):
 		personagem = input('Escolha o seu personagem: 1 - Biólogo, 2 - Veterinário, 3 - Protetor das Florestas')
 		if personagem == '1':
 			nome_personagem = 'Biólogo'
-			is_valid = False
 			return nome_personagem
 
 		elif personagem == '2':
 			nome_personagem = 'Veterinário'
-			is_valid = False
 			return nome_personagem
 			
 		elif personagem == '3':
 			nome_personagem = 'Protetor das Florestas'
-			is_valid = False
+	
 			return nome_personagem
 		else:
 			print('Personagem não encontrado! Digite um número válido.')
